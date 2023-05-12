@@ -1,7 +1,9 @@
 <h2>Characters List</h2>
 
 <ul>
-  <% characters.forEach(character => { %>
-  <li><a href="/characters/<%- character.id %>"> <%= character.name %> </a></li>
-  <% }) %>
+  <% characters.forEach(character=> { %>
+    <li><a href="/characters/character/<%- character.id %>">
+        <%= character.name %>
+      </a></li>
+    <% }) %>
 </ul>

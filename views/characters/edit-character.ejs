@@ -1,0 +1,19 @@
+<h2>Character Edit</h2>
+
+<form action="/characters/character/<%= character.id  %>/edit" method="POST">
+
+    <label>
+        Name: <input type="text" name="name" value=<%=character.name %>>
+    </label>
+    <label>
+        Occupation: <input type="text" name="occupation" value=<%=character.occupation %>>
+    </label>
+    <label>
+        Weapon: <input type="text" name="weapon" value=<%=character.weapon %>>
+    </label>
+    <label>
+        Debt : <input type="checkbox" name="debt" checked="true" value="true">
+    </label>
+
+    <input type="submit" value="Update character" class="btn-dark btn">
+</form>
